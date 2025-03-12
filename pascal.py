@@ -9,8 +9,8 @@ def fact(factorial_number):
 
 def pascal(rowIndex):
     coeffs = []
-    for k in range(rowIndex+1):
-        C = int(fact(rowIndex)/(fact(k)*fact(rowIndex-k)))
-        coeffs.append(C)
+    for row_elem in range(rowIndex+1):
+        row_elem_combinations = int(fact(rowIndex)/(fact(row_elem)*fact(rowIndex-row_elem)))
+        coeffs.append(row_elem_combinations)
 
     return coeffs
