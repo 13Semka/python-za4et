@@ -4,8 +4,8 @@ from collections import defaultdict
 def count_dgt(num):
     num_string = str(num)
     appeareances = defaultdict(int)
-    for i in num_string:
-        appeareances[i] += 1
+    for num_char in num_string:
+        appeareances[num_char] += 1
 
     return appeareances
 

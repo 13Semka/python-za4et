@@ -1,13 +1,13 @@
-def reverse(s, k):
-    s = list(s)
-    if len(s) > 2 * k:
-        for i in range(0, len(s), 2*k):
-            s[i:i+k] = s[i:i+k][::-1]
+def reverse(string, integer):
+    string = list(string)
+    if len(string) > 2 * integer:
+        for index in range(0, len(string), 2*integer):
+            string[index:index+integer] = string[index:index+integer][::-1]
 
-        return ''.join(s)
+        return ''.join(string)
     
-    elif len(s) >= k:
-        s[:k] = s[:k][::-1]
+    elif len(string) >= integer:
+        string[:integer] = string[:integer][::-1]
 
-        return ''.join(s)
+        return ''.join(string)
 

@@ -1,8 +1,9 @@
-def abbr(s):
+def abbr(string):
     abbreviation = ''
-    s = s.split(' ')
-    for i in s:
-        if i[0].isalpha():
-            abbreviation += i[0].capitalize()
+    string = string.split(' ')
+    for char in string:
+        if char[0].isalpha():
+            abbreviation += char[0].capitalize()
 
     return abbreviation
+
